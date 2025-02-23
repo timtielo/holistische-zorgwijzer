@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS for better device compatibility */
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased text-gray-900;
+  }
+
+  /* Improve form elements on mobile */
+  input,
+  select,
+  textarea {
+    @apply appearance-none;
+    font-size: 16px; /* Prevents iOS zoom on focus */
+  }
+
+  /* Custom checkbox styling */
+  input[type="checkbox"] {
+    @apply appearance-none h-5 w-5 rounded border border-gray-300 bg-white 
+           checked:bg-primary-600 checked:border-primary-600 
+           focus:ring-2 focus:ring-primary-500 focus:ring-offset-2
+           transition-colors duration-200 ease-in-out
+           relative cursor-pointer;
+  }
+
+  /* Checkmark */
+  input[type="checkbox"]:checked::after {
+    content: '';
+    @apply absolute h-2.5 w-1.5 border-white border-r-2 border-b-2 
+           left-[6px] top-[4px] transform rotate-45;
+  }
+
+  /* Better button touch targets */
+  button,
+  [role="button"] {
+    @apply select-none;
+    min-height: 44px; /* iOS accessibility guideline */
+  }
+}
+
+@layer components {
+  /* Responsive container padding */
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Responsive text sizing */
+  .responsive-text {
+    @apply text-base sm:text-lg lg:text-xl;
+  }
+
+  /* Responsive headings */
+  .responsive-heading {
+    @apply text-2xl sm:text-3xl lg:text-4xl font-bold;
+  }
+}
+
+/* Smooth scrolling for iOS */
+@supports (-webkit-overflow-scrolling: touch) {
+  body {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Remove tap highlight on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Improve form accessibility */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  @apply outline-none ring-2 ring-primary-500 ring-offset-2;
+}
+
+/* Better touch targets for links */
+a {
+  @apply inline-block;
+  padding: 0.25rem;
+  margin: -0.25rem;
+}
+
+/* Responsive images */
+img {
+  @apply max-w-full h-auto;
+}
