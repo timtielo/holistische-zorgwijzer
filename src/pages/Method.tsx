@@ -19,16 +19,16 @@ export function Method() {
   return (
     <>
       <SEO 
-        title="Onze Methode"
-        description="Ontdek hoe onze holistische aanpak chronische klachten aanpakt. Van rugpijn tot huidproblemen - wij kijken naar het complete plaatje voor een duurzame oplossing."
-        canonicalUrl="https://hollistischezorgwijzer.nl/methode"
+        title="Holistische Behandelmethode - Natuurlijke Genezing"
+        description="Ontdek hoe onze holistische behandelmethode chronische klachten aanpakt. Van burnout en stress tot rugpijn en huidproblemen - wij kijken naar het complete plaatje voor duurzame genezing en optimaal welzijn."
+        canonicalUrl="https://www.holistische-zorgwijzer.nl/methode"
       />
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify(generateWebPageSchema(
-            "Onze Holistische Behandelmethode",
-            "Ontdek hoe onze holistische aanpak chronische klachten aanpakt. Van rugpijn tot huidproblemen - wij kijken naar het complete plaatje voor een duurzame oplossing.",
-            "https://hollistischezorgwijzer.nl/methode"
+            "Holistische Behandelmethode - Natuurlijke Genezing",
+            "Ontdek hoe onze holistische behandelmethode chronische klachten aanpakt. Van burnout en stress tot rugpijn en huidproblemen - wij kijken naar het complete plaatje voor duurzame genezing.",
+            "https://www.holistische-zorgwijzer.nl/methode"
           ))}
         </script>
       </Helmet>

@@ -13,10 +13,10 @@ export function SEO({
   title, 
   description, 
   canonicalUrl, 
-  image = 'https://hollistischezorgwijzer.nl/og-image.jpg',
+  image = 'https://www.holistische-zorgwijzer.nl/og-image.jpg',
   type = 'website'
 }: SEOProps) {
-  const siteTitle = 'Hollistische Zorgwijzer';
+  const siteTitle = 'Holistische Zorgwijzer';
   const fullTitle = `${title} | ${siteTitle}`;
 
   return (
@@ -24,6 +24,9 @@ export function SEO({
       {/* Standard Meta */}
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
+      <meta name="keywords" content="holistische zorg, natuurlijke genezing, alternatieve geneeskunde, gezondheidsadvies, burnout behandeling, stress vermindering, voeding en gezondheid, mentale gezondheid, fysieke klachten, Nederland" />
+      <meta name="author" content="Holistische Zorgwijzer" />
+      <meta name="robots" content="index, follow" />
       <link rel="canonical" href={canonicalUrl} />
 
       {/* Open Graph */}
@@ -41,6 +44,11 @@ export function SEO({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+      
+      {/* Additional SEO */}
+      <meta name="geo.region" content="NL" />
+      <meta name="geo.placename" content="Nederland" />
+      <meta name="language" content="nl" />
     </Helmet>
   );
 }

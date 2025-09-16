@@ -1,38 +1,7 @@
 import React from 'react';
 import { Quote, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
-interface Testimonial {
-  name: string;
-  age: number;
-  text: string;
-  image: string;
-  condition: string;
-}
-
-const testimonials: Testimonial[] = [
-  {
-    name: "Lisa van der Berg",
-    age: 34,
-    text: "Na jaren van onverklaarbare vermoeidheid heeft de holistische aanpak me eindelijk geholpen de onderliggende oorzaken te begrijpen en aan te pakken.",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop",
-    condition: "Chronische vermoeidheid"
-  },
-  {
-    name: "Tim Tielkemeijer",
-    age: 22,
-    text: "Na een lange tijd van onverklaarbare vermoeidheid, ben ik weer terug de topsport in gerold en zijn mijn prestaties beter dan ooit.",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop",
-    condition: "Vermoeidheid"
-  },
-  {
-    name: "Emma Jansen",
-    age: 28,
-    text: "Eindelijk een aanpak die verder kijkt dan alleen symptomen. Mijn slaapproblemen zijn verbeterd en ik heb meer energie dan ooit.",
-    image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=150&h=150&fit=crop",
-    condition: "Slaapproblemen"
-  }
-];
+import { testimonials } from '../../data/testimonials';
 
 export function TrustIndicators() {
   return (

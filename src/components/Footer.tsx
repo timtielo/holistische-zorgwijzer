@@ -9,7 +9,7 @@ export function Footer() {
           <div>
             <div className="flex items-center">
               <Heart className="h-6 w-6 text-primary-600" />
-              <span className="ml-2 text-lg font-semibold">Hollistische Zorgwijzer</span>
+              <span className="ml-2 text-lg font-semibold">Holistische Zorgwijzer</span>
             </div>
             <p className="mt-2 text-sm text-gray-600">
               Jouw reis naar holistisch welzijn begint hier.
@@ -98,9 +98,27 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-gray-200 pt-8">
-          <p className="text-base text-gray-500 text-center">
-            © {new Date().getFullYear()} Hollistische Zorgwijzer. Alle rechten voorbehouden.
-          </p>
+          <div className="flex flex-col sm:flex-row justify-between items-center">
+            <p className="text-base text-gray-500">
+              © 2025 Holistische Zorgwijzer door{' '}
+              <a 
+                href="https://www.tielo-digital.nl/" 
+                target="_blank" 
+                className="text-primary-600 hover:text-primary-700 transition-colors"
+              >
+                Tielo Digital
+              </a>
+              . Alle rechten voorbehouden.
+            </p>
+            <div className="flex space-x-4 mt-2 sm:mt-0">
+              <a href="/privacy" className="text-sm text-gray-500 hover:text-primary-600 transition-colors">
+                Privacyverklaring
+              </a>
+              <a href="/algemene-voorwaarden" className="text-sm text-gray-500 hover:text-primary-600 transition-colors">
+                Algemene Voorwaarden
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

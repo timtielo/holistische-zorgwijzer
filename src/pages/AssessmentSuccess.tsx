@@ -9,16 +9,16 @@ export function AssessmentSuccess() {
   return (
     <>
       <SEO 
-        title="Zorgwijzer Voltooid"
-        description="Bedankt voor het invullen van de zorgwijzer. Plan nu een gesprek in om je resultaten te bespreken."
-        canonicalUrl="https://hollistischezorgwijzer.nl/assessment/success"
+        title="Gezondheidscheck Voltooid - Plan Je Gratis Gesprek"
+        description="Bedankt voor het invullen van de holistische gezondheidscheck. Plan nu een gratis gesprek in om je resultaten te bespreken en persoonlijk advies te ontvangen."
+        canonicalUrl="https://www.holistische-zorgwijzer.nl/assessment/success"
       />
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify(generateWebPageSchema(
-            "Zorgwijzer Voltooid - Hollistische Zorgwijzer",
-            "Bedankt voor het invullen van de zorgwijzer. Plan nu een gesprek in om je resultaten te bespreken.",
-            "https://hollistischezorgwijzer.nl/assessment/success"
+            "Gezondheidscheck Voltooid - Plan Je Gratis Gesprek",
+            "Bedankt voor het invullen van de holistische gezondheidscheck. Plan nu een gratis gesprek in om je resultaten te bespreken en persoonlijk advies te ontvangen.",
+            "https://www.holistische-zorgwijzer.nl/assessment/success"
           ))}
         </script>
       </Helmet>
@@ -99,8 +99,8 @@ export function AssessmentSuccess() {
             </Link>
             <p className="mt-4 text-sm text-gray-500">
               Geen geschikte tijd gevonden? Neem dan contact met ons op via{' '}
-              <a href="mailto:planning@hollistischezorgwijzer.nl" className="text-primary-600 hover:text-primary-700">
-                planning@hollistischezorgwijzer.nl
+              <a href="mailto:planning@holistischezorgwijzer.nl" className="text-primary-600 hover:text-primary-700">
+                planning@holistischezorgwijzer.nl
               </a>
             </p>
           </div>

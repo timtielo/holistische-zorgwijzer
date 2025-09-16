@@ -9,16 +9,16 @@ export function About() {
   return (
     <>
       <SEO 
-        title="Over Ons"
-        description="Leer meer over Hollistische Zorgwijzer. Ontdek onze missie, visie en het team van professionals dat klaar staat om jou te helpen."
-        canonicalUrl="https://hollistischezorgwijzer.nl/over-ons"
+        title="Over Ons - Holistische Zorgprofessionals"
+        description="Leer meer over Holistische Zorgwijzer. Ontdek onze missie, visie en het ervaren team van holistische zorgprofessionals dat klaar staat om jou te helpen naar optimaal welzijn."
+        canonicalUrl="https://www.holistische-zorgwijzer.nl/over-ons"
       />
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify(generateWebPageSchema(
-            "Over Hollistische Zorgwijzer",
-            "Leer meer over Hollistische Zorgwijzer. Ontdek onze missie, visie en het team van professionals dat klaar staat om jou te helpen.",
-            "https://hollistischezorgwijzer.nl/over-ons"
+            "Over Ons - Holistische Zorgprofessionals",
+            "Leer meer over Holistische Zorgwijzer. Ontdek onze missie, visie en het ervaren team van holistische zorgprofessionals dat klaar staat om jou te helpen naar optimaal welzijn.",
+            "https://www.holistische-zorgwijzer.nl/over-ons"
           ))}
         </script>
       </Helmet>
@@ -29,7 +29,7 @@ export function About() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div className="text-center">
               <h1 className="text-4xl font-bold text-white sm:text-5xl md:text-6xl">
-                Over Hollistische Zorgwijzer
+                Over Holistische Zorgwijzer
               </h1>
               <p className="mt-6 max-w-3xl mx-auto text-xl text-primary-100">
                 Wij geloven in een complete aanpak van gezondheid, waarbij we kijken naar alle aspecten die invloed hebben op jouw welzijn.

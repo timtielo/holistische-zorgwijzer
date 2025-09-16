@@ -53,7 +53,7 @@ export function Navigation() {
               <div className="absolute -inset-2 rounded-full bg-primary-100/50 scale-0 group-hover:scale-100 transition-transform duration-300" />
             </div>
             <span className="ml-3 text-xl font-semibold bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent">
-              Hollistische Zorgwijzer
+              Holistische Zorgwijzer
             </span>
           </Link>
 

@@ -77,6 +77,15 @@ export function ProblemSolution() {
                 Ontdek Jouw Pad naar Herstel
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
+              <div className="mt-6 relative inline-block">
+                <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-400 to-emerald-400 text-green-900 rounded-full text-sm font-bold shadow-lg border-2 border-green-500 transform hover:scale-105 transition-all duration-300">
+                  <span className="mr-2 text-base">✨</span>
+                  <span className="uppercase tracking-wide">Beperkt: 7 gratis trajecten over</span>
+                </div>
+                <div className="absolute -top-1 -right-1 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center animate-pulse">
+                  <span className="text-white text-xs font-bold">7</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -14,7 +14,14 @@ export function Hero() {
           <p className="mt-3 max-w-md mx-auto text-base text-primary-100 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl animate-slide-in">
             Ervaar onze holistische zorgwijzer en ontvang persoonlijk advies zodat jij weer goed in je vel zit.
           </p>
-          <div className="mt-8 max-w-md mx-auto sm:flex sm:justify-center md:mt-10">
+          <div className="mt-8 relative">
+            <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-400 to-orange-400 text-yellow-900 rounded-full text-sm font-bold shadow-lg transform hover:scale-105 transition-all duration-300 animate-bounce">
+              <span className="mr-2 text-lg">🎯</span>
+              <span className="uppercase tracking-wide">PROMO: nog 7 gratis adviestrajecten</span>
+            </div>
+            <div className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full animate-ping"></div>
+          </div>
+          <div className="mt-6 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
             <Link
               to="/assessment"
               className="inline-flex items-center px-8 py-4 border border-transparent text-base font-medium rounded-md text-white bg-primary-500 hover:bg-primary-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl md:text-lg md:px-10 group"

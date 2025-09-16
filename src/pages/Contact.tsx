@@ -61,16 +61,16 @@ export function Contact() {
   return (
     <>
       <SEO 
-        title="Contact"
-        description="Neem contact op met Hollistische Zorgwijzer. We staan klaar om je vragen te beantwoorden en je te helpen op weg naar optimale gezondheid."
-        canonicalUrl="https://hollistischezorgwijzer.nl/contact"
+        title="Contact - Holistische Zorgverleners Nederland"
+        description="Neem contact op met Holistische Zorgwijzer. Onze ervaren holistische zorgverleners staan klaar om je vragen te beantwoorden en je te helpen op weg naar optimale gezondheid en welzijn."
+        canonicalUrl="https://www.holistische-zorgwijzer.nl/contact"
       />
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify(generateWebPageSchema(
-            "Contact - Hollistische Zorgwijzer",
-            "Neem contact op met Hollistische Zorgwijzer. We staan klaar om je vragen te beantwoorden en je te helpen op weg naar optimale gezondheid.",
-            "https://hollistischezorgwijzer.nl/contact"
+            "Contact - Holistische Zorgverleners Nederland",
+            "Neem contact op met Holistische Zorgwijzer. Onze ervaren holistische zorgverleners staan klaar om je vragen te beantwoorden en je te helpen op weg naar optimale gezondheid.",
+            "https://www.holistische-zorgwijzer.nl/contact"
           ))}
         </script>
       </Helmet>
@@ -125,8 +125,8 @@ export function Contact() {
                         E-mail
                       </h3>
                       <p className="mt-1 text-gray-600">
-                        <a href="mailto:info@hollistischezorgwijzer.nl" className="hover:text-primary-600 transition-colors">
-                          info@hollistischezorgwijzer.nl
+                        <a href="mailto:info@holistischezorgwijzer.nl" className="hover:text-primary-600 transition-colors">
+                          info@holistischezorgwijzer.nl
                         </a>
                       </p>
                     </div>
@@ -157,7 +157,7 @@ export function Contact() {
                       </h3>
                       <div className="mt-1 text-gray-600">
                         <p>Maandag - Vrijdag: 09:00 - 17:00</p>
-                        <p>Zaterdag: Op afspraak</p>
+                        <p>Zaterdag: Gesloten</p>
                         <p>Zondag: Gesloten</p>
                       </div>
                     </div>

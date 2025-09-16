@@ -11,6 +11,17 @@ export function CallToAction() {
           <span className="block text-primary-200 mt-3">Zet vandaag nog je eerste stap.</span>
         </h2>
         <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+          <div className="mb-4 lg:mb-0 lg:mr-6">
+            <div className="relative">
+              <div className="inline-flex items-center px-5 py-2.5 bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-400 text-yellow-900 rounded-full text-sm font-bold shadow-xl border-2 border-yellow-500 transform hover:scale-105 transition-all duration-300">
+                <span className="mr-2 text-base animate-pulse">🔥</span>
+                <span className="uppercase tracking-wide">Nog 7 gratis plekken!</span>
+              </div>
+              <div className="absolute -top-2 -right-2 w-5 h-5 bg-red-500 rounded-full flex items-center justify-center">
+                <span className="text-white text-xs font-bold">!</span>
+              </div>
+            </div>
+          </div>
           <div className="inline-flex rounded-md shadow">
             <Link
               to="/assessment"

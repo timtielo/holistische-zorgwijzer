@@ -65,17 +65,31 @@ export function FAQ() {
   return (
     <>
       <SEO 
-        title="Veelgestelde Vragen"
-        description="Antwoorden op veelgestelde vragen over holistische gezondheidszorg en onze aanpak bij Hollistische Zorgwijzer."
-        canonicalUrl="https://hollistischezorgwijzer.nl/faq"
+        title="Veelgestelde Vragen - Holistische Gezondheidszorg"
+        description="Antwoorden op veelgestelde vragen over holistische gezondheidszorg, natuurlijke genezing en onze behandelmethoden bij Holistische Zorgwijzer. Vind antwoord op jouw vragen."
+        canonicalUrl="https://www.holistische-zorgwijzer.nl/faq"
       />
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify(generateWebPageSchema(
-            "Veelgestelde Vragen - Hollistische Zorgwijzer",
-            "Antwoorden op veelgestelde vragen over holistische gezondheidszorg en onze aanpak bij Hollistische Zorgwijzer.",
-            "https://hollistischezorgwijzer.nl/faq"
+            "Veelgestelde Vragen - Holistische Gezondheidszorg",
+            "Antwoorden op veelgestelde vragen over holistische gezondheidszorg, natuurlijke genezing en onze behandelmethoden bij Holistische Zorgwijzer.",
+            "https://www.holistische-zorgwijzer.nl/faq"
           ))}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })}
         </script>
       </Helmet>
 

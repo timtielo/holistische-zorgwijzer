@@ -18,155 +18,9 @@ export interface AssessmentSection {
 
 export const assessmentSections: AssessmentSection[] = [
   {
-    id: 'general',
-    title: 'Algemene Gezondheid',
-    description: 'Laten we beginnen met een aantal algemene vragen over je gezondheid.',
-    questions: [
-      {
-        id: 'energy',
-        text: 'Hoe zou je je energieniveau beschrijven?',
-        type: 'scale',
-        description: '1 = Zeer laag, 10 = Optimaal',
-        required: true
-      },
-      {
-        id: 'sleep',
-        text: 'Hoe is je slaapkwaliteit?',
-        type: 'scale',
-        description: '1 = Zeer slecht, 10 = Uitstekend',
-        required: true
-      }
-    ]
-  },
-  {
-    id: 'physical',
-    title: 'Fysieke Gezondheid',
-    description: 'Laten we kijken naar je fysieke klachten en gezondheid.',
-    questions: [
-      {
-        id: 'physical_complaints_scale',
-        text: 'Hoeveel fysieke klachten heb je?',
-        type: 'scale',
-        description: '1 = Weinig tot geen, 10 = Zeer veel',
-        required: true
-      },
-      {
-        id: 'physical_complaints',
-        text: 'Welke fysieke klachten ervaar je?',
-        type: 'multiChoice',
-        options: [
-          'Rugpijn',
-          'Nekpijn',
-          'Hoofdpijn',
-          'Gewrichtspijn',
-          'Spierklachten',
-          'Vermoeidheid',
-          'Maag- en darmklachten',
-          'Ademhalingsproblemen',
-          'Anders'
-        ],
-        required: true
-      },
-      {
-        id: 'physical_complaints_other',
-        text: 'Als je "Anders" hebt aangevinkt, kun je hier je klachten beschrijven:',
-        type: 'text',
-        required: false
-      },
-      {
-        id: 'physical_complaints_duration',
-        text: 'Hoe lang heb je al last van deze klachten?',
-        type: 'text',
-        description: 'Beschrijf hoe lang je al last hebt van deze klachten',
-        required: true
-      },
-      {
-        id: 'diet',
-        text: 'Hoe zou je je voedingspatroon omschrijven?',
-        type: 'text',
-        description: 'Beschrijf je dagelijkse eetpatroon en eventuele dieetrestricties',
-        required: true
-      }
-    ]
-  },
-  {
-    id: 'mental',
-    title: 'Mentale Gezondheid',
-    description: 'Deze vragen helpen ons inzicht te krijgen in je mentale welzijn.',
-    questions: [
-      {
-        id: 'stress_level',
-        text: 'Hoeveel stress ervaar je?',
-        type: 'scale',
-        description: '1 = Weinig tot geen, 10 = Zeer veel',
-        required: true
-      },
-      {
-        id: 'mental_state',
-        text: 'Hoe voel je je?',
-        type: 'multiChoice',
-        options: [
-          'Somber',
-          'Angstig',
-          'Burn-out klachten',
-          'Piekeren',
-          'Slaapproblemen',
-          'Concentratieproblemen',
-          'Stemmingswisselingen',
-          'Anders'
-        ],
-        required: true
-      },
-      {
-        id: 'mental_state_other',
-        text: 'Als je "Anders" hebt aangevinkt, kun je hier beschrijven hoe je je voelt:',
-        type: 'text',
-        required: false
-      },
-      {
-        id: 'mental_complaints_duration',
-        text: 'Hoe lang ervaar je deze gevoelens al?',
-        type: 'text',
-        description: 'Beschrijf wanneer deze gevoelens zijn begonnen en hoe ze zich hebben ontwikkeld',
-        required: true
-      }
-    ]
-  },
-  {
-    id: 'treatments',
-    title: 'Eerdere Behandelingen',
-    description: 'Vertel ons meer over behandelingen die je al hebt geprobeerd.',
-    questions: [
-      {
-        id: 'previous_treatments',
-        text: 'Welke behandelingen heb je al geprobeerd voor deze problemen?',
-        type: 'multiChoice',
-        options: [
-          'Huisarts',
-          'Fysiotherapie',
-          'Psycholoog/Psychiater',
-          'Acupunctuur',
-          'Chiropractor',
-          'Osteopaat',
-          'Natuurgeneeskunde',
-          'Voedingsdeskundige',
-          'Mindfulness/Meditatie',
-          'Anders'
-        ],
-        required: true
-      },
-      {
-        id: 'treatments_other',
-        text: 'Als je "Anders" hebt aangevinkt, welke andere behandelingen heb je geprobeerd?',
-        type: 'text',
-        required: false
-      }
-    ]
-  },
-  {
     id: 'personal',
     title: 'Persoonlijke Informatie',
-    description: 'Tot slot hebben we nog wat gegevens van je nodig om contact met je op te kunnen nemen.',
+    description: 'Laten we beginnen met wat basisgegevens.',
     questions: [
       {
         id: 'name',
@@ -181,10 +35,127 @@ export const assessmentSections: AssessmentSection[] = [
         required: true
       },
       {
-        id: 'phone',
-        text: 'Wat is je telefoonnummer?',
+        id: 'age',
+        text: 'Wat is je leeftijd?',
         type: 'text',
-        description: 'Optioneel',
+        required: true
+      }
+    ]
+  },
+  {
+    id: 'mental',
+    title: 'Mentale Klachten',
+    description: 'Vertel ons over je mentale gezondheid en welzijn.',
+    questions: [
+      {
+        id: 'mental_complaints_specific',
+        text: 'Welke mentale klachten ervaar je?',
+        type: 'multiChoice',
+        options: [
+          'Burnout',
+          'Stress',
+          'Somberheid',
+          'Mindfog/mentale mist',
+          'Angst',
+          'Concentratieproblemen',
+          'Slaapproblemen',
+          'Piekeren',
+          'Anders'
+        ],
+        required: true
+      },
+      {
+        id: 'mental_health_rating',
+        text: 'Hoe beoordeel je je mentale gezondheid op dit moment?',
+        type: 'scale',
+        description: '1 = Zeer slecht, 5 = Uitstekend',
+        required: true
+      },
+      {
+        id: 'mental_complaints_other',
+        text: 'Als je "Anders" hebt aangevinkt, kun je hier je klachten beschrijven:',
+        type: 'text',
+        required: false
+      }
+    ]
+  },
+  {
+    id: 'physical',
+    title: 'Fysieke Klachten',
+    description: 'Vertel ons over je fysieke klachten en gezondheid.',
+    questions: [
+      {
+        id: 'physical_complaints_specific',
+        text: 'Welke fysieke klachten ervaar je?',
+        type: 'multiChoice',
+        options: [
+          'Moeheid/vermoeidheid',
+          'Schouderpijn',
+          'Nekpijn',
+          'Rugpijn',
+          'Problemen met darmen',
+          'Eczeem',
+          'Allergieën',
+          'Voedselallergieën',
+          'Hoofdpijn',
+          'Gewrichtspijn',
+          'Anders'
+        ],
+        required: true
+      },
+      {
+        id: 'physical_health_rating',
+        text: 'Hoe beoordeel je je fysieke gezondheid op dit moment?',
+        type: 'scale',
+        description: '1 = Zeer slecht, 5 = Uitstekend',
+        required: true
+      },
+      {
+        id: 'physical_complaints_other',
+        text: 'Als je "Anders" hebt aangevinkt, kun je hier je klachten beschrijven:',
+        type: 'text',
+        required: false
+      }
+    ]
+  },
+  {
+    id: 'duration',
+    title: 'Duur van Klachten',
+    description: 'Vertel ons hoe lang je al last hebt van deze klachten.',
+    questions: [
+      {
+        id: 'complaint_duration',
+        text: 'Hoe lang heb je al last van deze klachten?',
+        type: 'text',
+        description: 'Bijvoorbeeld: 6 maanden, 2 jaar, sinds mijn jeugd',
+        required: true
+      }
+    ]
+  },
+  {
+    id: 'medical_history',
+    title: 'Medische Geschiedenis',
+    description: 'Vertel ons over je ervaringen met reguliere zorg.',
+    questions: [
+      {
+        id: 'regular_care_experience',
+        text: 'Ben je bij reguliere zorg geweest voor deze klachten?',
+        type: 'text',
+        description: 'Bijvoorbeeld: huisarts, specialist, ziekenhuis',
+        required: true
+      },
+      {
+        id: 'medication_usage',
+        text: 'Gebruik je momenteel medicijnen?',
+        type: 'text',
+        description: 'Zo ja, welke medicijnen en waarvoor?',
+        required: false
+      },
+      {
+        id: 'treatment_results',
+        text: 'Wat was het resultaat van eerdere behandelingen?',
+        type: 'text',
+        description: 'Hebben eerdere behandelingen geholpen? Waarom wel/niet?',
         required: false
       }
     ]

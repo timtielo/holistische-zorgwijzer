@@ -6,39 +6,36 @@ import { assessmentSections } from '../../types/assessment';
 export function TestForm() {
   const handleTestSubmission = async () => {
     const testData = {
-      // General Health
-      energy: 7,
-      sleep: 8,
-      
-      // Physical Health
-      physical_complaints_scale: 4,
-      physical_complaints: ['Rugpijn', 'Vermoeidheid'],
-      physical_complaints_other: 'Soms hoofdpijn na lang computerwerk',
-      physical_complaints_duration: '6 maanden',
-      diet: 'Gezond en gevarieerd, veel groenten',
-      
-      // Mental Health
-      stress_level: 6,
-      mental_state: ['Concentratieproblemen', 'Piekeren'],
-      mental_state_other: '',
-      mental_complaints_duration: '3 maanden',
-      
-      // Previous Treatments
-      previous_treatments: ['Huisarts', 'Fysiotherapie'],
-      treatments_other: '',
-      
       // Personal Information
       name: 'Test Persoon',
       email: 'test@example.com',
-      phone: '0612345678'
+      age: '35',
+      
+      // Mental Health
+      mental_complaints_specific: ['Stress', 'Mindfog/mentale mist'],
+      mental_complaints_other: '',
+      mental_health_rating: 2,
+      
+      // Physical Health
+      physical_complaints_specific: ['Moeheid/vermoeidheid', 'Nekpijn'],
+      physical_complaints_other: 'Soms hoofdpijn na lang computerwerk',
+      physical_health_rating: 3,
+      
+      // Duration
+      complaint_duration: '6 maanden',
+      
+      // Medical History
+      regular_care_experience: 'Huisarts bezocht, doorverwezen naar fysiotherapeut',
+      medication_usage: 'Paracetamol bij hoofdpijn',
+      treatment_results: 'Fysiotherapie hielp tijdelijk, klachten kwamen terug'
     };
 
     try {
       await submitAssessment(testData, assessmentSections);
-      toast.success('Test data successfully submitted!');
+      toast.success('Test data succesvol verzonden!');
     } catch (error) {
       console.error('Error submitting test data:', error);
-      toast.error('Failed to submit test data');
+      toast.error('Fout bij verzenden test data');
     }
   };
 

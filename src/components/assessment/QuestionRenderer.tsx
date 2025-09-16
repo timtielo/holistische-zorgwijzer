@@ -12,13 +12,13 @@ export function QuestionRenderer({ question, value, onChange }: QuestionRenderer
   // Set default value for scale questions
   useEffect(() => {
     if (question.type === 'scale' && value === undefined) {
-      onChange(5);
+      onChange(3);
     }
   }, [question.type, value, onChange]);
 
   switch (question.type) {
     case 'scale':
-      const currentValue = value === undefined ? 5 : value;
+      const currentValue = value === undefined ? 3 : value;
       return (
         <div className="space-y-4">
           <div className="flex items-center justify-between">
@@ -32,15 +32,15 @@ export function QuestionRenderer({ question, value, onChange }: QuestionRenderer
           <input
             type="range"
             min="1"
-            max="10"
+            max="5"
             value={currentValue}
             onChange={(e) => onChange(parseInt(e.target.value))}
             className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary-600"
           />
           <div className="flex justify-between text-xs text-gray-500">
             <span>1</span>
+            <span>3</span>
             <span>5</span>
-            <span>10</span>
           </div>
         </div>
       );

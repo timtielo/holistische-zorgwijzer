@@ -10,6 +10,8 @@ import { Assessment } from './pages/Assessment';
 import { FAQ } from './pages/FAQ';
 import { Contact } from './pages/Contact';
 import { AssessmentSuccess } from './pages/AssessmentSuccess';
+import { Privacy } from './pages/Privacy';
+import { Terms } from './pages/Terms';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           <Route path="/assessment/success" element={<AssessmentSuccess />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/algemene-voorwaarden" element={<Terms />} />
         </Route>
       </Routes>
     </Router>

@@ -81,16 +81,16 @@ export function Assessment() {
   return (
     <>
       <SEO 
-        title="Zorgwijzer"
-        description="Vul onze uitgebreide zorgwijzer in voor een persoonlijk advies."
-        canonicalUrl="https://hollistischezorgwijzer.nl/assessment"
+        title="Gratis Holistische Gezondheidscheck - Persoonlijk Advies"
+        description="Vul onze uitgebreide holistische gezondheidscheck in en ontvang persoonlijk advies voor jouw gezondheidsklachten. Gratis screening voor burnout, stress, chronische klachten en meer."
+        canonicalUrl="https://www.holistische-zorgwijzer.nl/assessment"
       />
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify(generateWebPageSchema(
-            "Zorgwijzer - Hollistische Zorgwijzer",
-            "Vul onze uitgebreide zorgwijzer in voor een persoonlijk advies.",
-            "https://hollistischezorgwijzer.nl/assessment"
+            "Gratis Holistische Gezondheidscheck - Persoonlijk Advies",
+            "Vul onze uitgebreide holistische gezondheidscheck in en ontvang persoonlijk advies voor jouw gezondheidsklachten. Gratis screening voor burnout, stress en chronische klachten.",
+            "https://www.holistische-zorgwijzer.nl/assessment"
           ))}
         </script>
       </Helmet>
