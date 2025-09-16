@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.holistische-zorgwijzer.nl/sitemap.xml
+
+# Disallow admin or sensitive areas (if any in the future)
+# Disallow: /admin/
+# Disallow: /api/
+
+# Allow search engines to crawl all public pages
+Allow: /
+Allow: /over-ons
+Allow: /methode
+Allow: /ervaringen
+Allow: /assessment
+Allow: /faq
+Allow: /contact
+Allow: /privacy
+Allow: /algemene-voorwaarden
